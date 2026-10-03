@@ -1,0 +1,25 @@
+{
+    "interface": "enp0s8",
+
+    "scan_threshold": 10,
+    "scan_window_seconds": 5,
+
+    "connection_threshold": 100,
+    "connection_window_seconds": 10,
+
+    "traffic_threshold_pps": 1000,
+
+    "suspicious_ports": [
+        21,
+        23,
+        445,
+        3389,
+        5900
+    ],
+
+    "auto_block": true,
+    "block_duration_seconds": 60,
+
+    "database": "data/nids.db",
+    "log_file": "logs/security.log"
+}
